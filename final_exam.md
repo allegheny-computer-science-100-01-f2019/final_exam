@@ -3,7 +3,21 @@
 
 
 ### Question 1
-Explain (in a few sentences) how object-oriented nature of Java can be used in the computational thinking process.
+Something is wrong with each of these loops. In some cases the errors will cause the compiler to
+emit error messages and prevent you from executing the program. In others, the program
+will compile without error, but the effectiveness of the loop is negated by the error. (NOTE:
+assume that all variables are properly declared and initialized -- the errors lie in the formation
+of the loop statements themselves, not elsewhere in the program.)
+
+(a)
+```
+for (int i == 3; i < 10; i++) {
+   sum = sum + i;
+}
+```
+
+(b)
+```
 
 
 ### Question 2
