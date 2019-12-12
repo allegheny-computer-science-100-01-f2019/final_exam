@@ -84,7 +84,7 @@ Write the Java statements needed to create a new `ArrayList` containing integer 
 
 
 ### Question 6 [5 points]
-Suppose a Java class contains instance variables declared below. Assume the values of these variables have been assigned elsewhere in the program. Write a method called `setTriple` that changes the number stored in the variable 'value' to the triple that number ('value' multiplied by three) but only if 'tripleUp' is true. Nothing happens otherwise. Nothing is returned. 
+Suppose a Java class contains instance variables declared below. Assume the values of these variables have been assigned elsewhere in the program. Write a method called `setTriple` that changes the number stored in the variable `value` to the triple that number (`value` multiplied by three) but only if `tripleUp` is true. Nothing happens otherwise. Nothing is returned. 
 
 ``` 
 private boolean tripleUp;
@@ -102,6 +102,8 @@ The left figure below shows a class describing a `Toy`. The constructor is missi
 (b) Write the `setOwner` method that takes a String as a parameter and modifies the `owner` to that String literal. 
 
 (c) Create a different `Toy` object of your choosing.
+
+(d) Change the owner of this new `Toy` object to your first name.
 
 
 ### Question 8 [5 points]
