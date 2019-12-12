@@ -1,4 +1,5 @@
-## CMPSC 100 Final Exam
+## CMPSC 100-01 Final Exam
+## Fall 2019
 ### Name:
 
 
