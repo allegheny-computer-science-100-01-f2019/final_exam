@@ -25,8 +25,8 @@ for (int count = 0, count < 10, count = count + 1) {  sum = sum + count;}
 
 (c)
 ```
-int count = 0;
-do {    sum = sum + count;    if (sum % 3 != 0) {	count++; 
+int count = 3;
+do {    sum = count;    if (sum % 3 != 0) {	count++; 
     }
 } while (count <= 3);
 ```
@@ -49,9 +49,9 @@ Assume the following variable declarations in the class named `Thing`.
 private int var1;private double var2;private String var3;private boolean var4;
 ```
 
-(a) Write a four-parameter constructor that initializes the instance variables to the values provided in the parameters; order the parameters in the same order as the variables were declared above.
+(a) Write a four-parameter constructor that initializes the instance variables to the values provided in the parameters; order the parameters in the same order in which the variables were declared above.
 
-(b) Write a statement to create a new `Thing` object with initial values of 11 (for var1), 2.4 (for var2), "Hello" for var3, and true for var4.
+(b) Write a statement to create a new `Thing` object with initial values of 11 for `var1`, 2.4 for `var2`, "Hello" for `var3`, and true for `var4`.
 
 ### Question 3 [15 points]
 Study the following Java code snippet, then answer the questions below.
@@ -60,7 +60,11 @@ Study the following Java code snippet, then answer the questions below.
 ArrayList<String> list = new ArrayList<String>();list.add("bat");list.add("cat");list.add("dog");list.add("frog");
 ```
 
-(a) What is the value of `list.indexOf("bat")`?(b) What is the value of `list.size()`?(c) What is the value of `list.contains("og")`?(d) What is the value of `list.get(1).contains("at")`?
+(a) What is the value of `list.indexOf("bat")`?
+(b) What is the value of `list.size()`?
+(c) What is the value of `list.contains("og")`?
+(d) What is the value of `list.get(1).contains("at")`?
+
 (e) What is the value of `list.get(3).equals("dog")`?
 
 ### Question 4 [5 points]
@@ -69,7 +73,7 @@ Convert the following do while loop into an equivalent for loop.
 int count = 100;
 do {
    System.out.println(count);
-   count -=10;
+   count -= 10;
 } while (count >= 0);
 ```
 
@@ -79,7 +83,7 @@ Write the Java statements needed to create a new `ArrayList` containing integer 
 
 
 ### Question 6 [5 points]
-Suppose a Java class contains instance variables declared below. Assume the values of these variables have been assigned elsewhere in the program. Write a method that changes the number stored in the variable 'value' to the triple that number ('value' multiplied by three) but only if 'tripleUp' is true. Nothing happens otherwise. Nothing is returned. 
+Suppose a Java class contains instance variables declared below. Assume the values of these variables have been assigned elsewhere in the program. Write a method called `setTriple` that changes the number stored in the variable 'value' to the triple that number ('value' multiplied by three) but only if 'tripleUp' is true. Nothing happens otherwise. Nothing is returned. 
 
 ``` 
 private boolean tripleUp;
@@ -158,18 +162,18 @@ What is the output of the following code segment:
     	case "Oberlin College":
 	case "Kenyon College":
 	case "The College of Wooster":
-    		System.out.println(name + "in OH");
-    		break;
+    	    System.out.println(name + "in OH");
+    	    break;
     	case "Allegheny College":
-    		System.out.println(name + "in PA");
-    		break;
+    	    System.out.println(name + "in PA");
+    	    break;
     	case "Albion College":
 	case "Hope College":
-    		System.out.println("in MI");
-    		break;
+    	    System.out.println("in MI");
+    	    break;
     	case "default":
-    		System.out.println("Not Found");
-    		break;
+    	    System.out.println("Not Found");
+    	    break;
       }
     }
 ```
