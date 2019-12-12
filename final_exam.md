@@ -1,6 +1,6 @@
 ## CMPSC 100-01 Final Exam
-## Fall 2019
-### Name:
+### Fall 2019
+## Name:
 
 
 ### Question 1 [15 points]
