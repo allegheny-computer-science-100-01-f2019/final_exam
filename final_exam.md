@@ -2,225 +2,182 @@
 ### Name:
 
 
-### Question 1
+### Question 1 [15 points]
 Something is wrong with each of these loops. In some cases the errors will cause the compiler to
 emit error messages and prevent you from executing the program. In others, the program
 will compile without error, but the effectiveness of the loop is negated by the error. (NOTE:
 assume that all variables are properly declared and initialized -- the errors lie in the formation
 of the loop statements themselves, not elsewhere in the program.)
 
+Find the errors and fix them.
+
 (a)
 ```
-for (int i == 3; i < 10; i++) {
-   sum = sum + i;
+for (int count == 3; count < 10; count++) {
+   sum = sum + count;
 }
 ```
 
 (b)
 ```
-
-
-### Question 2
-Which of the following classes is a part of the java.lang package? Put x inside brackets to indicate the chosen answer.
-- [ ] Scanner
-- [ ] Random
-- [ ] Math
-- [ ] Date
-
-
-### Question 3
-What is printed to the terminal by the following Java statements?
-
-```
-int num1 = 2;
-int num2 = 5;
-System.out.println("num1 * num2 = " + (num1 * num2));
-System.out.println("\\\\//");
-System.out.println("num1 + num2 = " + num1 + num2);
+for (int count = 0, count < 10, count = count + 1) {  sum = sum + count;}
 ```
 
-
-### Question 4
-Assume that you are in the directory named `midterm` in the terminal that contains a file  `midterm_exam.md`. What command do you need to type in the terminal to commit a file called `midterm_exam.md` to your GitHub repository on the Web? Put x inside brackets to indicate the chosen answer.
-
-- [ ] git commit midterm_exam.md -m "Adding midterm"
-- [ ] git add midterm_exam.md -m "Adding midterm"
-- [ ] git commit "Adding midterm"
-- [ ] git commit midterm/midterm_exam.md -m "Adding midterm"
-
-
-### Question 5
-What are the final values of variables `num1`, `num2`, `num3`, and `num4` in the following code?
+(c)
 ```
-int num1 = 10;
-int num2 = 20;
-double num3 = num1 / num 2;
-double num4 = num1 / (double) num2;
-num1 = num1 * num4;
-num2 = (int) (num2 * num4);
-```
-
-
-### Question 6
-Define and give an example for each of the following terms: (a) reference data type; (b) primitive data type; (c) casting; (d) promotion
-
-
-### Question 7
-Write Java statements to set variable `num` to a random integer between 1 and 6 (including but not exceeding 6), i.e., a number that is either 1, 2, 3, 4, 5, or 6. You may assume that an instance of the Random class has been created (as: `Random rand = new Random();`;) and that variable `num` has been initialized to a value of an `int` data type.
-
-
-### Question 8
-Each of the following sequences of Java statements contains a compiler error. State what the error is.
-
-* a)
-
-```
-public static void main (String [ ] args) {
-   System.out.println("Hello World")
-}
-```   
-
-* b)   
-
-```
-Scanner input = new Scanner (System.in);
-String line = input.nextLine();
-String characters = line.length();
-```
-
-* c)
-
-```
-int num = 5 / (double) 2;
-```
-
-* d)
-
-```
-Random random = new Random;
-```
-
-### Question 9
-Something is wrong with each of the if and if/else statements below. All the errors are the errors that prevent you from executing the program. Find the errors and correct them. (NOTE: assume that all variables are properly declared and initialized; the errors lie in the formation of the if statements themselves, not elsewhere in the program.)
-
-* a)
-
-```
-if (num1 = 10) {
-   num2 = num1;
-}
-```
-
-* b)
-
-```
-if (num1 =< 10) {
-   num1 = num1;
-}
-```
-
-* c)
-
-```
-if (num1 != 10) {
-   num2 = num1;
-}; else {
-   num2 = 10;
-}
-```
-
-* d)
-
-```
-if (num1 && num2 >= 10) {
-   num2 = num1;
-}
-```   
-
-
-### Question 10
-Suppose `line` is a String variable containing a line of text. You may assume that the line of text may contain any mixture of letters, spaces, numbers, punctuation marks, etc. You may also assume that the string has at least two characters in it. Complete the Java statements needed to print each of the following values.
-* a) The length of the string `line`.
-
-* b)  The string `line` with all letters changed to upper case.
-
-* c) The middle character of `line`. You can assume that the middle position is the length of `line` divided by 2, no matter whether the length is even or odd.
-
-* d) The last three characters of `line.`
-
-
-### Question 11
-Which of the following is NOT a computational thinking technique? Put x inside brackets to indicate the chosen answer.
-- [ ] Decomposition
-- [ ] Pattern recognition
-- [ ] Programming
-
-
-### Question 12
-Something is wrong with each of the while statements below. In some cases the errors will cause the compiler to emit error messages and prevent you from executing the program. In others, the program will compile without error, but will issue a run-time error during the execution of the program. Find the errors and correct them. (NOTE: assume that all variables are properly declared and initialized - the errors lie in the formation of the `if` and `while` statements themselves, not elsewhere in the program.)
-
-* a)
-
-```
-int num = 0;
-while (num = 0) {
-    num++;
-}
-```
-
-* b)
-
-```
-int num = 0;
-while (num != 10) {
-    System.out.println("Number is " + num);
-}
-```
-
-* c)
-
-```
-int num = 10;  
-while (num1 || num2 >= 2) {
-    num--;
-}
-```
-
-### Question 13
-Which of the following is NOT a valid identifier? Put x inside brackets to indicate the chosen answer.
-- [ ] num1
-- [ ] Num
-- [ ] num_1
-- [ ] 1num
-
-
-### Question 14
-What is meant by "healthy internet"? From the assigned readings, what can computer scientists do to build healthier internet for all?
-
-
-### Question 15
-Assume there is a text file titled `input.txt` that contains the following:
-
-```
-Night, street, lamp, drugstore,
-A dull and meaningless light.
-```
-
-What will be printed by the following Java statements?
-
-```
-File inputFile = null;
-Scanner scanner = null;
-try {
-   inputFile = new File("input/Ulysses.txt");
-   scanner = new Scanner(inputFile);
-} catch (FileNotFoundException noFile) {
-   System.out.println("Unable to locate file");
-}
 int count = 0;
-while (scanner.hasNext()) {
-   String text = scanner.next();
-   count++;
-   System.out.println(count + ": " + text);
-}
+do {    sum = sum + count;    if (sum % 3 != 0) {	count++; 
+    }
+} while (count <= 3);
 ```
+
+(d)
+```
+for (int count = 0; count <= 10) {  sum = sum + count;}
+```
+
+(e)
+```
+do (int count = 0) {    sum = sum + count;
+} while (count < 10);
+```
+
+### Question 2 [10 points]
+Assume the following variable declarations in the class named `Thing`.
+
+```
+private int var1;private double var2;private String var3;private boolean var4;
+```
+
+(a) Write a four-parameter constructor that initializes the instance variables to the values provided in the parameters; order the parameters in the same order as the variables were declared above.
+
+(b) Write a statement to create a new `Thing` object with initial values of 11 (for var1), 2.4 (for var2), "Hello" for var3, and true for var4.
+
+### Question 3 [15 points]
+Study the following Java code snippet, then answer the questions below.
+
+```
+ArrayList<String> list = new ArrayList<String>();list.add("bat");list.add("cat");list.add("dog");list.add("frog");
+```
+
+(a) What is the value of `list.indexOf("bat")`?(b) What is the value of `list.size()`?(c) What is the value of `list.contains("og")`?(d) What is the value of `list.get(1).contains("at")`?
+(e) What is the value of `list.get(3).equals("dog")`?
+
+### Question 4 [5 points]
+Convert the following do while loop into an equivalent for loop.
+```
+int count = 100;
+do {
+   System.out.println(count);
+   count -=10;
+} while (count >= 0);
+```
+
+### Question 5 [5 points]
+
+Write the Java statements needed to create a new `ArrayList` containing integer values and to fill it with the first 100 positive even integers, starting with 2. Must use a loop.
+
+
+### Question 6 [5 points]
+Suppose a Java class contains instance variables declared below. Assume the values of these variables have been assigned elsewhere in the program. Write a method that changes the number stored in the variable 'value' to the triple that number ('value' multiplied by three) but only if 'tripleUp' is true. Nothing happens otherwise. Nothing is returned. 
+
+``` 
+private boolean tripleUp;
+private int value;
+```
+
+### Question 7 [15 points]
+
+![Question 7](class.png)
+
+The left figure below shows a class describing a `Toy`. The constructor is missing. The right figure shows how an object of the class `Toy` is constructed. `setOwner` method allows to change the owner of the toy. All toys initially have no owners (value set to "None") until it is changed by the 'setOwner' method.
+
+(a) Write the constructor that creates a `Toy` object of specific name, price, owner (in that order). 
+
+(b) Write the `setOwner` method that takes a String as a parameter and modifies the `owner` to that String literal. 
+
+(c) Create a different `Toy` object of your choosing.
+
+
+### Question 8 [5 points]
+True or False. Put x inside brackets to indicate the chosen answer.
+
+(a) Square brackets "[ ]" are used in the declaration of an ArrayList.
+[ ] True
+[ ] False
+
+
+(b) UML diagram contains information about all instance variables of a class.
+[ ] True
+[ ] False
+
+
+(c) An array is a dynamic data structure.
+[ ] True
+[ ] False
+
+
+(d) Abstraction is one of computational thinking techniques.
+[ ] True
+[ ] False
+
+
+(e) GitHub is a version control software platform.
+[ ] True
+[ ] False
+
+
+### Question 9 [10 points]
+Given the following Java declaration:
+```
+        int [ ] nums = new int[100];
+```
+Write the Java statements needed to fill `nums` with the values of
+the first 100 positive multiples of 5, that is, 5, 10, 15, etc. Must use a loop.
+
+
+
+### Question 10 [5 points]
+
+What is the output of the following code segment:
+
+```
+    ArrayList<String> list = new ArrayList<String>();
+    
+    list.add("Oberlin College");
+    list.add("Allegheny College");
+    list.add("Kenyon College");
+    list.add("Albion College");
+    list.add("Hope College");
+    list.add("The College of Wooster");
+    
+    Iterator<String> iterator = list.iterator();
+    while(iterator.hasNext()) {
+      String name = iterator.next();
+      switch(name) {
+    	case "Oberlin College":
+	case "Kenyon College":
+	case "The College of Wooster":
+    		System.out.println(name + "in OH");
+    		break;
+    	case "Allegheny College":
+    		System.out.println(name + "in PA");
+    		break;
+    	case "Albion College":
+	case "Hope College":
+    		System.out.println("in MI");
+    		break;
+    	case "default":
+    		System.out.println("Not Found");
+    		break;
+      }
+    }
+```
+
+
+### Question 11 [5 points]
+In a few sentences describe one example of how computer science can be applied to and used in another field.
+
+
+### Question 12 [5 points]
+In a few sentences either describe how computational mode of expression (using computation for expression) can be used to create meaning and communicate thoughts, emotions, or beliefs to others or argue how it does not accomplish this goal. 
